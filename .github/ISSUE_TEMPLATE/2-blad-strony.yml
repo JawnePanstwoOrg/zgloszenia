@@ -1,0 +1,37 @@
+name: Błąd strony
+description: Coś się nie wyświetla, link nie działa, filtr daje zły wynik.
+labels: ["strona"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Zgłoszenia są publiczne. Nie podawaj danych osobowych osób prywatnych (adresów, telefonów, numerów PESEL).
+        Prośby o usunięcie danych osobowych z serwisu: [jawnepanstwo.pl/prywatnosc](https://jawnepanstwo.pl/prywatnosc).
+        Bez konta na GitHubie można napisać na kontakt@jawnepanstwo.pl.
+  - type: input
+    id: adres
+    attributes:
+      label: Adres strony
+      placeholder: https://jawnepanstwo.pl/…
+    validations:
+      required: true
+  - type: textarea
+    id: kroki
+    attributes:
+      label: Kroki i wynik
+      description: Kolejne kroki, a potem to, co pojawiło się na ekranie.
+    validations:
+      required: true
+  - type: textarea
+    id: oczekiwane
+    attributes:
+      label: Oczekiwany wynik
+    validations:
+      required: false
+  - type: input
+    id: przegladarka
+    attributes:
+      label: Przeglądarka i system
+      placeholder: np. Firefox 131, Windows 11
+    validations:
+      required: false

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Podatność bezpieczeństwa
+    url: https://github.com/JawnePanstwoOrg/zgloszenia/security/advisories/new
+    about: Zgłoś poufnie, nie w publicznym zgłoszeniu.
+  - name: Rejestr poprawek
+    url: https://jawnepanstwo.pl/errata
+    about: Lista poprawek informacji opublikowanych w serwisie.

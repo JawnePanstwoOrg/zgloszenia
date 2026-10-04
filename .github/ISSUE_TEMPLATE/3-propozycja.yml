@@ -1,0 +1,30 @@
+name: Propozycja
+description: Brakujące dane, nowa funkcja albo zmiana prezentacji.
+labels: ["propozycja"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Zgłoszenia są publiczne. Nie podawaj danych osobowych osób prywatnych (adresów, telefonów, numerów PESEL).
+        Prośby o usunięcie danych osobowych z serwisu: [jawnepanstwo.pl/prywatnosc](https://jawnepanstwo.pl/prywatnosc).
+        Bez konta na GitHubie można napisać na kontakt@jawnepanstwo.pl.
+  - type: textarea
+    id: propozycja
+    attributes:
+      label: Co proponujesz
+    validations:
+      required: true
+  - type: textarea
+    id: po-co
+    attributes:
+      label: Do czego by się to przydało
+      description: Jaką informację chcesz znaleźć albo sprawdzić.
+    validations:
+      required: false
+  - type: input
+    id: zrodlo
+    attributes:
+      label: Źródło danych (jeśli znasz)
+      placeholder: https://…
+    validations:
+      required: false

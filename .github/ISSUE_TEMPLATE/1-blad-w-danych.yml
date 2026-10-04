@@ -1,0 +1,38 @@
+name: Błąd w danych
+description: Liczba, data, nazwisko albo status niezgodne ze źródłem.
+labels: ["dane"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Zgłoszenia są publiczne. Nie podawaj danych osobowych osób prywatnych (adresów, telefonów, numerów PESEL).
+        Prośby o usunięcie danych osobowych z serwisu: [jawnepanstwo.pl/prywatnosc](https://jawnepanstwo.pl/prywatnosc).
+        Bez konta na GitHubie można napisać na kontakt@jawnepanstwo.pl.
+  - type: input
+    id: adres
+    attributes:
+      label: Adres strony w serwisie
+      placeholder: https://jawnepanstwo.pl/ustawy/…
+    validations:
+      required: true
+  - type: textarea
+    id: jest
+    attributes:
+      label: Co pokazuje serwis
+      description: Przepisz albo opisz informację, która jest błędna.
+    validations:
+      required: true
+  - type: textarea
+    id: powinno
+    attributes:
+      label: Jak powinno być
+    validations:
+      required: true
+  - type: input
+    id: zrodlo
+    attributes:
+      label: Link do źródła
+      description: Strona Sejmu, Senatu, ISAP, RCL, EUR-Lex, Trybunału albo inny dokument urzędowy.
+      placeholder: https://…
+    validations:
+      required: true
